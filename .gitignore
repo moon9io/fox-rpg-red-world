@@ -1,0 +1,4 @@
+# Godot exports
+*.import
+.godot/
+export/
