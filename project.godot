@@ -16,13 +16,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="Fox RPG Tutorial"
 config/version="1.0"
-run/main_scene="res://world/world.tscn"
+run/main_scene="res://ui/main_menu.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.png"
 
 [autoload]
 GameSettings="*res://ui/game_settings.gd"
-DialogueManager="*res://ui/dialogue_manager.gd"
+DialogueManager="*res://ui/dialogue_ui.tscn"
 ItemSystem="*res://world/item_system.gd"
 AchievementManager="*res://ui/achievement_manager.gd"
 WeatherSystem="*res://world/weather_system.gd"

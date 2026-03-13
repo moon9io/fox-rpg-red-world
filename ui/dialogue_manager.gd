@@ -7,7 +7,6 @@ extends CanvasLayer
 @onready var dialogue_box: Panel = $DialogueBox
 @onready var text_label: Label = $DialogueBox/TextLabel
 @onready var name_label: Label = $DialogueBox/NameLabel
-@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 var current_dialogue: Array = []
 var dialogue_index: int = 0

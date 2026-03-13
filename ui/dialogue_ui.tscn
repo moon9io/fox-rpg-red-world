@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://dialogue_ui_scene"]
+
+[ext_resource type="Script" path="res://ui/dialogue_manager.gd" id="1_script"]
+
+[node name="DialogueUI" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_script")
+
+[node name="DialogueBox" type="Panel" index="0" type="Panel"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -80.0
+offset_right = 150.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="NameLabel" type="Label" index="0" type="Label"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 5.0
+offset_right = 100.0
+offset_bottom = 25.0
+theme_override_font_sizes/font_size = 12
+text = "Name"
+
+[node name="TextLabel" type="Label" index="1" type="Label"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 25.0
+offset_right = 290.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 10
+text = "Dialogue text goes here..."
+autowrap_mode = 3
