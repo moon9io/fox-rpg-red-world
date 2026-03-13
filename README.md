@@ -1,18 +1,36 @@
-# 🦊 Fox RPG - Godot Learning Project
+# Fox RPG: Red World (Enhanced Edition) 🦊🔴
 
-This is a small-scoped Godot 4.3 project, featuring a top-down RPG-like game, where you play as a little fox avoiding damage from bats and destroying grass. Sounds dangerous! 
+مشروع تطوير لعبة Fox RPG إلى تجربة RPG كاملة ومستلهمة من ألعاب Zelda و Dark Souls.
 
-The tutorial I followed is an amazing ~6h course made by **Hearbeast**, which you can check out [on his YouTube channel](/https://youtu.be/mAbG8Oi-SvQ?list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a). 
+## 🌟 الميزات الجديدة (New Features)
 
-## 🎮 Features
+- **القصة والعالم (Lore & World):** قصة غامضة تُكتشف من خلال الحوارات وأوصاف العناصر.
+- **نظام الحوارات (Dialogue System):** تفاعل مع الشخصيات (NPCs) باللغتين العربية والإنجليزية.
+- **نظام العناصر (Item System):** عناصر قابلة للجمع مع أوصاف تساهم في بناء القصة.
+- **بطاقات المهارات (Skill Cards):** تطوير قدرات الثعلب (السرعة، القوة، إلخ).
+- **الإنجازات (Achievements):** 10 إنجازات قابلة للفتح مرتبطة بأفعال اللاعب.
+- **نظام النقاط (Score System):** اجمع النقاط من هزيمة الأعداء وإتمام المهام.
+- **القائمة الرئيسية (Main Menu):** واجهة مستخدم جذابة مع إعدادات كاملة ودعم ثنائي اللغة.
+- **توازن اللعب (Game Balance):** تجربة لعب تمتد لـ 10-15 دقيقة مع معركة زعيم نهائي.
 
-- Small map made with sprites and tile maps
-- Player movement, attacks, dashes
-- Audio effects and music
-- Animated effects
-- State machines for enemies and player
-- Attacking the player, invincibility logic
+## 🎮 التحكم (Controls)
 
-## 📷 Screenshots
+- **WASD / Arrows:** الحركة (Movement)
+- **Space:** التبديل بين العالمين (Switch Worlds)
+- **J / Left Click:** الهجوم (Attack)
+- **K / Right Click:** التدحرج (Roll)
+- **Enter / E:** التفاعل مع الشخصيات (Interact)
 
-![Screenshot1](./screenshots/1.jpg)
+## 🛠️ التقنيات المستخدمة (Tech Stack)
+
+- **Engine:** Godot 4.x
+- **Language:** GDScript
+- **Localization:** Arabic & English support
+
+## 📜 القصة (The Story)
+
+في عالم "إيريثيا"، انقسم الواقع إلى بعدين. الثعلب الصغير هو الحارس الوحيد القادر على التنقل بينهما. هل ستتمكن من جمع قطع الذاكرة المفقودة ودمج العالمين مرة أخرى؟
+
+---
+
+*تم تطوير هذا المشروع كجزء من تحدي تحويل تجربة تقنية إلى لعبة متكاملة.*
