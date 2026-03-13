@@ -8,6 +8,7 @@ var health = 100
 var max_health = 100
 var health_timer = 0.0
 var red_overlay = null
+signal world_switched(is_red_world)
 var world_tween: Tween
 
 # ═══════════════════════════════════════════════════
@@ -34,6 +35,7 @@ var roll_vector = Vector2.RIGHT
 @onready var sprite: Sprite2D = $Sprite2D
 
 var stats = PlayerStats
+@onready var special_moves_node: SpecialMoves = $SpecialMoves
 
 
 # ═══════════════════════════════════════════════════
@@ -41,6 +43,7 @@ var stats = PlayerStats
 # ═══════════════════════════════════════════════════
 
 func switch_world():
+	emit_signal("world_switched", !in_red_world)
 	"""التبديل بين العالمين مع تأثيرات بصرية سلسة"""
 	in_red_world = !in_red_world
 	
@@ -79,6 +82,9 @@ func switch_world():
 # ═══════════════════════════════════════════════════
 
 func _ready():
+	add_child(preload("res://player/special_moves.gd").instantiate())
+	get_node("SpecialMoves").player = self
+	get_node("SpecialMoves").stats = PlayerStats
 	stats.no_health.connect(_on_stats_no_health)
 	animation_tree.active = true
 	sword_hitbox.knockback_vector = roll_vector
@@ -106,6 +112,11 @@ func _process(delta):
 
 
 func _physics_process(delta: float) -> void:
+	# استدعاء الحركات الخاصة
+	if Input.is_action_just_pressed("special_move_1"):
+		special_moves_node.use_special_move("dash_attack")
+	elif Input.is_action_just_pressed("special_move_2"):
+		special_moves_node.use_special_move("spin_attack")
 	match state:
 		MOVE:
 			move_state(delta)
